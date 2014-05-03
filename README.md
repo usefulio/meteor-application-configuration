@@ -11,8 +11,23 @@ _it allows you to specify a mongo database to connect via your settings json fil
 How to Use
 ==========
 
+(because this has the same name as the built-in package we want to override we have to do this differently)
+
+Edit your smart.json to include this under the packages section:
+
 ```
-mrt add application-configuration
+"application-configuration": {
+  "git": "https://github.com/usefulio/meteor-application-configuration.git",
+  "tag": "v0.8.1"
+}
+```
+
+Change the tag to whatever meteor version you want that there is a release of this package for.
+
+
+Tell meteor to use it:
+
+```
 meteor add application-configuration
 ```
 
