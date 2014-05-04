@@ -67,12 +67,20 @@ try {
     } catch (e) {
       Log.warn("Could not parse METEOR_SETTINGS as JSON");
     }
+    if(settings){
+      if(settings.mongo_url){
+        process.env.MONGO_URL = settings.mongo_url;
+      }
+      if(settings.mongo_oplog_url){
+        process.env.MONGO_OPLOG_URL = settings.mongo_oplog_url;
+      }
+    }
     staticAppConfig = {
       settings: settings,
       packages: {
         'mongo-livedata': {
-          url: settings && settings.mongo_url ? settings.mongo_url : process.env.MONGO_URL,
-          oplog: settings && settings.mongo_oplog_url ? settings.mongo_oplog_url : process.env.MONGO_OPLOG_URL
+          url: process.env.MONGO_URL,
+          oplog: process.env.MONGO_OPLOG_URL
         }
       }
     };

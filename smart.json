@@ -3,6 +3,6 @@
 	"description": "Custom version of the official package that lets you connect a to a mongo url specified in your settings. Release numbers follow meteor versions.",
 	"homepage": "https://github.com/usefulio/meteor-application-configuration",
 	"author": "Ian Serlin (https://github.com/usefulio)",
-	"version": "0.8.3",
+	"version": "0.8.4",
 	"git": "https://github.com/usefulio/meteor-application-configuration.git"
 }

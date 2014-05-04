@@ -31,6 +31,7 @@ Tell meteor to use it:
 meteor add application-configuration
 ```
 
+_WARNING YOU MUST SPECIFY BOTH AN URL AND AN OPLOG_URL FOR CHANGES TO BE SENT TO CLIENTS AS EXPECTED_
 In your settings file:
 
 ```
