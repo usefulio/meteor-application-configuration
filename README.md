@@ -37,7 +37,7 @@ In your settings file:
 ```
 {
 	"mongo_url": "mongodb://<dbusername>:<dbpassword>@<databaseurl>:<databaseport>/<databasename>?autoReconnect=true"
-	, "mongo_oplog_url": "mongodb://<oplogusername>:<oplogpassword>@<databaseurl>:<databaseport>/local?authSource=admin"
+	, "mongo_oplog_url": "mongodb://<oplogusername>:<oplogpassword>@<databaseurl>:<databaseport>/local?authSource=<databasename>"
 }
 ```
 
